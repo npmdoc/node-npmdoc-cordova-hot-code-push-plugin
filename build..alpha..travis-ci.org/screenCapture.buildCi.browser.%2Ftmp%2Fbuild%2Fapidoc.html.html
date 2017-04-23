@@ -1,0 +1,461 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/nordnet/cordova-hot-code-push#readme">cordova-hot-code-push-plugin (v1.5.2)</a>
+</h1>
+<h4>Cordova plugin to perform code updates on the fly</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-hot-code-push-plugin">module cordova-hot-code-push-plugin</a><ol>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.</span>chcpBuildOptions</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.</span>chcpConfigXmlReader</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.</span>chcpConfigXmlWriter</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.</span>iosWKWebViewEngineSupport</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.</span>xmlHelper</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-hot-code-push-plugin.chcpBuildOptions">module cordova-hot-code-push-plugin.chcpBuildOptions</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-hot-code-push-plugin.chcpBuildOptions.getBuildConfigurationByName">
+            function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.chcpBuildOptions.</span>getBuildConfigurationByName
+            <span class="apidocSignatureSpan">(ctx, buildName)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-hot-code-push-plugin.chcpConfigXmlReader">module cordova-hot-code-push-plugin.chcpConfigXmlReader</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-hot-code-push-plugin.chcpConfigXmlReader.readOptions">
+            function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.chcpConfigXmlReader.</span>readOptions
+            <span class="apidocSignatureSpan">(ctx)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-hot-code-push-plugin.chcpConfigXmlWriter">module cordova-hot-code-push-plugin.chcpConfigXmlWriter</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-hot-code-push-plugin.chcpConfigXmlWriter.writeOptions">
+            function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.chcpConfigXmlWriter.</span>writeOptions
+            <span class="apidocSignatureSpan">(context, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-hot-code-push-plugin.iosWKWebViewEngineSupport">module cordova-hot-code-push-plugin.iosWKWebViewEngineSupport</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-hot-code-push-plugin.iosWKWebViewEngineSupport.setWKWebViewEngineMacro">
+            function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.iosWKWebViewEngineSupport.</span>setWKWebViewEngineMacro
+            <span class="apidocSignatureSpan">(cordovaContext)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.cordova-hot-code-push-plugin.xmlHelper">module cordova-hot-code-push-plugin.xmlHelper</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-hot-code-push-plugin.xmlHelper.readXmlAsJson">
+            function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.xmlHelper.</span>readXmlAsJson
+            <span class="apidocSignatureSpan">(filePath, simplify)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.cordova-hot-code-push-plugin.xmlHelper.writeJsonAsXml">
+            function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.xmlHelper.</span>writeJsonAsXml
+            <span class="apidocSignatureSpan">(jsData, filePath, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-hot-code-push-plugin" id="apidoc.module.cordova-hot-code-push-plugin">module cordova-hot-code-push-plugin</a></h1>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-hot-code-push-plugin.chcpBuildOptions" id="apidoc.module.cordova-hot-code-push-plugin.chcpBuildOptions">module cordova-hot-code-push-plugin.chcpBuildOptions</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-hot-code-push-plugin.chcpBuildOptions.getBuildConfigurationByName" id="apidoc.element.cordova-hot-code-push-plugin.chcpBuildOptions.getBuildConfigurationByName">
+        function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.chcpBuildOptions.</span>getBuildConfigurationByName
+        <span class="apidocSignatureSpan">(ctx, buildName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getBuildConfigurationByName(ctx, buildName) {
+  // load options from the chcpbuild.options file
+  var chcpBuildOptions = getBuildOptionsFromConfig(ctx);
+  if (chcpBuildOptions == null) {
+    return null;
+  }
+
+  var resultConfig = chcpBuildOptions[buildName];
+  if (!resultConfig) {
+    return null;
+  }
+
+  // backwards capability
+  // TODO: remove this in the next versions
+  if (resultConfig['config-file'] &amp;&amp; !resultConfig['config-file']['url']) {
+    var url = resultConfig['config-file'];
+    resultConfig['config-file'] = {
+      'url': url
+    };
+  }
+
+  return resultConfig;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * @return {boolean} true - if build option is found and we successfully injected it into config.xml; otherwise - false
+ */
+function prepareWithCustomBuildOption(ctx, optionName, chcpXmlOptions) {
+if (optionName.length == 0) {
+  return false;
+}
+
+var buildConfig = chcpBuildOptions.<span class="apidocCodeKeywordSpan">getBuildConfigurationByName</span>(ctx, optionName);
+if (buildConfig == null) {
+  console.warn('Build configuration for "' + optionName + '" not found in chcp.options. Ignoring it.'
+;);
+  return false;
+}
+
+console.log('Using config from chcp.options:');
+console.log(JSON.stringify(buildConfig, null, 2));
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-hot-code-push-plugin.chcpConfigXmlReader" id="apidoc.module.cordova-hot-code-push-plugin.chcpConfigXmlReader">module cordova-hot-code-push-plugin.chcpConfigXmlReader</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-hot-code-push-plugin.chcpConfigXmlReader.readOptions" id="apidoc.element.cordova-hot-code-push-plugin.chcpConfigXmlReader.readOptions">
+        function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.chcpConfigXmlReader.</span>readOptions
+        <span class="apidocSignatureSpan">(ctx)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function readOptions(ctx) {
+  var configFilePath = path.join(ctx.opts.projectRoot, 'config.xml');
+  var configXmlContent = xmlHelper.readXmlAsJson(configFilePath, true);
+
+  return parseConfig(configXmlContent);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var consoleOptions = processConsoleOptions(ctx);
+if (consoleOptions.isRelease) {
+  printLog('Building for release, not changing config.xml');
+  return;
+}
+
+// read plugin preferences from config.xml
+chcpXmlOptions = chcpConfigXmlReader.<span class="apidocCodeKeywordSpan">readOptions</span>(ctx);
+
+// if any build option is provided in console - try to map it with chcpbuild.options
+if (prepareWithCustomBuildOption(ctx, consoleOptions.buildOption, chcpXmlOptions)) {
+  return;
+}
+
+// if none of the above
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-hot-code-push-plugin.chcpConfigXmlWriter" id="apidoc.module.cordova-hot-code-push-plugin.chcpConfigXmlWriter">module cordova-hot-code-push-plugin.chcpConfigXmlWriter</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-hot-code-push-plugin.chcpConfigXmlWriter.writeOptions" id="apidoc.element.cordova-hot-code-push-plugin.chcpConfigXmlWriter.writeOptions">
+        function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.chcpConfigXmlWriter.</span>writeOptions
+        <span class="apidocSignatureSpan">(context, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeOptions(context, options) {
+  setup(context);
+  injectOptions(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ console.log(JSON.stringify(buildConfig, null, 2));
+
+ mergeBuildOptions(chcpXmlOptions, buildConfig);
+
+ console.log('Resulting config will contain the following preferences:');
+ console.log(JSON.stringify(chcpXmlOptions, null, 2));
+
+ chcpConfigXmlWriter.<span class="apidocCodeKeywordSpan">writeOptions</span>(ctx, chcpXmlOptions);
+
+ return true;
+}
+
+/**
+* Merge build options into current config.xml preferences.
+*
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-hot-code-push-plugin.iosWKWebViewEngineSupport" id="apidoc.module.cordova-hot-code-push-plugin.iosWKWebViewEngineSupport">module cordova-hot-code-push-plugin.iosWKWebViewEngineSupport</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-hot-code-push-plugin.iosWKWebViewEngineSupport.setWKWebViewEngineMacro" id="apidoc.element.cordova-hot-code-push-plugin.iosWKWebViewEngineSupport.setWKWebViewEngineMacro">
+        function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.iosWKWebViewEngineSupport.</span>setWKWebViewEngineMacro
+        <span class="apidocSignatureSpan">(cordovaContext)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function setWKWebViewEngineMacro(cordovaContext) {
+  init(cordovaContext);
+
+  // injecting options in project file
+  var projectFile = loadProjectFile();
+  setMacro(projectFile.xcode);
+  projectFile.write();
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var buildConfig,
+  chcpXmlOptions;
+
+logStart();
+
+// apply iOS-specific stuff
+if (ctx.opts.platforms.indexOf('ios') !== -1) {
+  iosWKWebViewEngineSupport.<span class="apidocCodeKeywordSpan">setWKWebViewEngineMacro</span>(ctx);
+}
+
+// if we are running build with --release option - do nothing
+var consoleOptions = processConsoleOptions(ctx);
+if (consoleOptions.isRelease) {
+  printLog('Building for release, not changing config.xml');
+  return;
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.cordova-hot-code-push-plugin.xmlHelper" id="apidoc.module.cordova-hot-code-push-plugin.xmlHelper">module cordova-hot-code-push-plugin.xmlHelper</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-hot-code-push-plugin.xmlHelper.readXmlAsJson" id="apidoc.element.cordova-hot-code-push-plugin.xmlHelper.readXmlAsJson">
+        function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.xmlHelper.</span>readXmlAsJson
+        <span class="apidocSignatureSpan">(filePath, simplify)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function readXmlAsJson(filePath, simplify) {
+  var xmlData;
+  var parsedData;
+  var parserOptions = {};
+
+  if (simplify) {
+    parserOptions = {
+      attrValueProcessors: [xml2jsProcessors.parseNumbers, xml2jsProcessors.parseBooleans],
+      explicitArray: false,
+      mergeAttrs: true,
+      explicitRoot: false
+    };
+  }
+
+  var xmlParser = new xml2js.Parser(parserOptions);
+  try {
+    xmlData = fs.readFileSync(filePath);
+    xmlParser.parseString(xmlData, function(err, data) {
+      if (data) {
+        parsedData = data;
+      }
+    });
+  } catch (err) {}
+
+  return parsedData;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ * If none is specified - default options are returned.
+ *
+ * @param {Object} ctx - cordova context object
+ * @return {Object} plugin prefereces
+ */
+function readOptions(ctx) {
+  var configFilePath = path.join(ctx.opts.projectRoot, 'config.xml');
+  var configXmlContent = xmlHelper.<span class="apidocCodeKeywordSpan">readXmlAsJson</span>(configFilePath, true);
+
+  return parseConfig(configXmlContent);
+}
+
+// endregion
+
+// region Private API
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.cordova-hot-code-push-plugin.xmlHelper.writeJsonAsXml" id="apidoc.element.cordova-hot-code-push-plugin.xmlHelper.writeJsonAsXml">
+        function <span class="apidocSignatureSpan">cordova-hot-code-push-plugin.xmlHelper.</span>writeJsonAsXml
+        <span class="apidocSignatureSpan">(jsData, filePath, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function writeJsonAsXml(jsData, filePath, options) {
+  var xmlBuilder = new xml2js.Builder(options);
+  var changedXmlData = xmlBuilder.buildObject(jsData);
+  var isSaved = true;
+
+  try {
+    fs.writeFileSync(filePath, changedXmlData);
+  } catch (err) {
+    console.log(err);
+    isSaved = false;
+  }
+
+  return isSaved;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+   for (var preferenceName in options) {
+     injectPreference(chcpXmlConfig, preferenceName, options[preferenceName]);
+   }
+
+   // write them back to config.xml
+   configData.widget['chcp'] = [];
+   configData.widget.chcp.push(chcpXmlConfig);
+   xmlHelper.<span class="apidocCodeKeywordSpan">writeJsonAsXml</span>(configData, configXmlFilePath);
+ });
+}
+
+/**
+* Inject preference into xml.
+*
+* @param {Object} xml - current xml preferences for the plugin
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
